@@ -1,4 +1,4 @@
-class Player {
+class Player: Combatant {
   var name: String
   var initiative: Int
   var order: Int

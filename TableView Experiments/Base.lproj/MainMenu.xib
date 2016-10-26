@@ -128,6 +128,15 @@ DQ
                                     <action selector="addPlayer:" target="-1" id="DGo-nu-jYA"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="New Creature" id="j3n-pH-s7Y">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="addCreature:" target="-1" id="3xH-Yz-ppv"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>

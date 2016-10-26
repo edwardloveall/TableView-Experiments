@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3936EAC71DC0F04400225C51 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3936EAC61DC0F04400225C51 /* Player.swift */; };
 		3936EAC91DC1010600225C51 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3936EAC81DC1010600225C51 /* PlayerView.swift */; };
+		39CD1D881DC12622006F8803 /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD1D871DC12622006F8803 /* Combatant.swift */; };
+		39CD1D8C1DC128B1006F8803 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD1D8B1DC128B1006F8803 /* Creature.swift */; };
+		39CD1D8E1DC12900006F8803 /* CreatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD1D8D1DC12900006F8803 /* CreatureView.swift */; };
 		39CD6DD31DB2806C007BE73B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD6DD21DB2806C007BE73B /* AppDelegate.swift */; };
 		39CD6DD51DB2806C007BE73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CD6DD41DB2806C007BE73B /* Assets.xcassets */; };
 		39CD6DD81DB2806C007BE73B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CD6DD61DB2806C007BE73B /* MainMenu.xib */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		3936EAC61DC0F04400225C51 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3936EAC81DC1010600225C51 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		39CD1D871DC12622006F8803 /* Combatant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combatant.swift; sourceTree = "<group>"; };
+		39CD1D8B1DC128B1006F8803 /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Creature.swift; path = ../Creature.swift; sourceTree = "<group>"; };
+		39CD1D8D1DC12900006F8803 /* CreatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatureView.swift; sourceTree = "<group>"; };
 		39CD6DCF1DB2806C007BE73B /* TableView Experiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableView Experiments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CD6DD21DB2806C007BE73B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CD6DD41DB2806C007BE73B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,7 +71,10 @@
 				39CD6DE01DB2808A007BE73B /* MainWindow.xib */,
 				39CD6DE31DB28219007BE73B /* MainViewController.swift */,
 				3936EAC81DC1010600225C51 /* PlayerView.swift */,
+				39CD1D8D1DC12900006F8803 /* CreatureView.swift */,
+				39CD1D871DC12622006F8803 /* Combatant.swift */,
 				3936EAC61DC0F04400225C51 /* Player.swift */,
+				39CD1D8B1DC128B1006F8803 /* Creature.swift */,
 				39CD6DD41DB2806C007BE73B /* Assets.xcassets */,
 				39CD6DD61DB2806C007BE73B /* MainMenu.xib */,
 				39CD6DD91DB2806C007BE73B /* Info.plist */,
@@ -148,6 +157,9 @@
 				39CD6DE41DB28219007BE73B /* MainViewController.swift in Sources */,
 				39CD6DE11DB2808A007BE73B /* MainWindowController.swift in Sources */,
 				3936EAC71DC0F04400225C51 /* Player.swift in Sources */,
+				39CD1D8E1DC12900006F8803 /* CreatureView.swift in Sources */,
+				39CD1D8C1DC128B1006F8803 /* Creature.swift in Sources */,
+				39CD1D881DC12622006F8803 /* Combatant.swift in Sources */,
 				3936EAC91DC1010600225C51 /* PlayerView.swift in Sources */,
 				39CD6DD31DB2806C007BE73B /* AppDelegate.swift in Sources */,
 			);

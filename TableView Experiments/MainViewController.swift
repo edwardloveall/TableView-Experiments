@@ -2,33 +2,61 @@ import Cocoa
 
 class MainViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
   @IBOutlet weak var tableView: NSTableView!
-  var players = [Player]()
+  var combatants = [Combatant]()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    let player = Player(name: "Hello", initiative: 10, order: players.count)
-    players.append(player)
-    tableView.reloadData()
   }
 
   func numberOfRows(in tableView: NSTableView) -> Int {
-    return players.count
+    return combatants.count
   }
 
   func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-    let player = players[row]
-    if let view = tableView.make(withIdentifier: "player", owner: nil) as? PlayerView {
-      view.initative.intValue = Int32(player.initiative)
-      view.name.stringValue = player.name
-      return view
+    let combatant = combatants[row]
+
+    switch combatant {
+    case is Player:
+      return configurePlayerView(player: combatant)
+    case is Creature:
+      return configureCreatureView(creature: combatant)
+    default:
+      return nil
     }
-    
-    return nil
   }
 
   @IBAction func addPlayer(_ sender: NSMenuItem) {
-    let player = Player(name: "Hello", initiative: 10, order: players.count)
-    players.append(player)
+    let player = Player(name: "Hello", initiative: 10, order: combatants.count)
+    combatants.append(player)
     tableView.reloadData()
+  }
+
+  @IBAction func addCreature(_ sender: NSMenuItem) {
+    let creature = Creature(name: "Goodbye", initiative: 11, order: combatants.count)
+    combatants.append(creature)
+    tableView.reloadData()
+  }
+
+  func configurePlayerView(player: Combatant) -> PlayerView? {
+    guard let player = player as? Player
+          else { fatalError("could not create Player") }
+    let playerView = tableView.make(withIdentifier: "player", owner: self) as? PlayerView
+
+    playerView?.initative.intValue = Int32(player.initiative)
+    playerView?.name.stringValue = player.name
+
+    return playerView
+  }
+
+  func configureCreatureView(creature: Combatant) -> CreatureView? {
+    guard let creature = creature as? Creature
+          else { fatalError("could not create Creature") }
+    let creatureView = tableView.make(withIdentifier: "creature", owner: self) as? CreatureView
+
+    creatureView?.initative.intValue = Int32(creature.initiative)
+    creatureView?.name.stringValue = creature.name
+    creatureView?.hitPoints.intValue = Int32(creature.hitPoints)
+
+    return creatureView
   }
 }
