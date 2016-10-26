@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3936EAC71DC0F04400225C51 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3936EAC61DC0F04400225C51 /* Player.swift */; };
+		3936EAC91DC1010600225C51 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3936EAC81DC1010600225C51 /* PlayerView.swift */; };
 		39CD6DD31DB2806C007BE73B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD6DD21DB2806C007BE73B /* AppDelegate.swift */; };
 		39CD6DD51DB2806C007BE73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CD6DD41DB2806C007BE73B /* Assets.xcassets */; };
 		39CD6DD81DB2806C007BE73B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CD6DD61DB2806C007BE73B /* MainMenu.xib */; };
 		39CD6DE11DB2808A007BE73B /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD6DDF1DB2808A007BE73B /* MainWindowController.swift */; };
 		39CD6DE21DB2808A007BE73B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CD6DE01DB2808A007BE73B /* MainWindow.xib */; };
 		39CD6DE41DB28219007BE73B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD6DE31DB28219007BE73B /* MainViewController.swift */; };
-		39CD6DE71DB28568007BE73B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD6DE51DB28568007BE73B /* PlayerViewController.swift */; };
-		39CD6DE81DB28568007BE73B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CD6DE61DB28568007BE73B /* PlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3936EAC61DC0F04400225C51 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3936EAC81DC1010600225C51 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		39CD6DCF1DB2806C007BE73B /* TableView Experiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableView Experiments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CD6DD21DB2806C007BE73B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CD6DD41DB2806C007BE73B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		39CD6DDF1DB2808A007BE73B /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWindowController.swift; path = ../MainWindowController.swift; sourceTree = "<group>"; };
 		39CD6DE01DB2808A007BE73B /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
 		39CD6DE31DB28219007BE73B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		39CD6DE51DB28568007BE73B /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		39CD6DE61DB28568007BE73B /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				39CD6DDF1DB2808A007BE73B /* MainWindowController.swift */,
 				39CD6DE01DB2808A007BE73B /* MainWindow.xib */,
 				39CD6DE31DB28219007BE73B /* MainViewController.swift */,
-				39CD6DE51DB28568007BE73B /* PlayerViewController.swift */,
-				39CD6DE61DB28568007BE73B /* PlayerViewController.xib */,
+				3936EAC81DC1010600225C51 /* PlayerView.swift */,
+				3936EAC61DC0F04400225C51 /* Player.swift */,
 				39CD6DD41DB2806C007BE73B /* Assets.xcassets */,
 				39CD6DD61DB2806C007BE73B /* MainMenu.xib */,
 				39CD6DD91DB2806C007BE73B /* Info.plist */,
@@ -133,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				39CD6DD51DB2806C007BE73B /* Assets.xcassets in Resources */,
-				39CD6DE81DB28568007BE73B /* PlayerViewController.xib in Resources */,
 				39CD6DE21DB2808A007BE73B /* MainWindow.xib in Resources */,
 				39CD6DD81DB2806C007BE73B /* MainMenu.xib in Resources */,
 			);
@@ -147,8 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				39CD6DE41DB28219007BE73B /* MainViewController.swift in Sources */,
-				39CD6DE71DB28568007BE73B /* PlayerViewController.swift in Sources */,
 				39CD6DE11DB2808A007BE73B /* MainWindowController.swift in Sources */,
+				3936EAC71DC0F04400225C51 /* Player.swift in Sources */,
+				3936EAC91DC1010600225C51 /* PlayerView.swift in Sources */,
 				39CD6DD31DB2806C007BE73B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
