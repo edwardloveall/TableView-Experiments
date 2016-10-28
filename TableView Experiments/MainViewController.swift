@@ -80,4 +80,11 @@ class MainViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
       creature.hitPoints = sender.integerValue
     }
   }
+
+  @IBAction func sortByInitative(_ sender: NSMenuItem) {
+    combatants.sort(by: { a, b in
+      a.initiative > b.initiative
+    })
+    tableView.reloadData()
+  }
 }
