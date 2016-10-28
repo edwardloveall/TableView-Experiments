@@ -60,4 +60,24 @@ class MainViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
 
     return creatureView
   }
+
+  @IBAction func editName(_ sender: NSTextField) {
+    let index = tableView.row(for: sender)
+    var combatant = combatants[index]
+    combatant.name = sender.stringValue
+  }
+
+  @IBAction func editInitiative(_ sender: NSTextField) {
+    let index = tableView.row(for: sender)
+    var combatant = combatants[index]
+    combatant.initiative = sender.integerValue
+  }
+
+  @IBAction func editHitPoints(_ sender: NSTextField) {
+    let index = tableView.row(for: sender)
+    let combatant = combatants[index]
+    if let creature = combatant as? Creature {
+      creature.hitPoints = sender.integerValue
+    }
+  }
 }
