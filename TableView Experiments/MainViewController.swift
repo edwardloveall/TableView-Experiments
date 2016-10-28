@@ -2,6 +2,7 @@ import Cocoa
 
 class MainViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
   @IBOutlet weak var tableView: NSTableView!
+
   var combatants = [Combatant]()
 
   override func viewDidLoad() {
@@ -42,7 +43,7 @@ class MainViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
           else { fatalError("could not create Player") }
     let playerView = tableView.make(withIdentifier: "player", owner: self) as? PlayerView
 
-    playerView?.initative.intValue = Int32(player.initiative)
+    playerView?.initative.integerValue = player.initiative
     playerView?.name.stringValue = player.name
 
     return playerView
@@ -53,9 +54,9 @@ class MainViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
           else { fatalError("could not create Creature") }
     let creatureView = tableView.make(withIdentifier: "creature", owner: self) as? CreatureView
 
-    creatureView?.initative.intValue = Int32(creature.initiative)
+    creatureView?.initative.integerValue = creature.initiative
     creatureView?.name.stringValue = creature.name
-    creatureView?.hitPoints.intValue = Int32(creature.hitPoints)
+    creatureView?.hitPoints.integerValue = creature.hitPoints
 
     return creatureView
   }
